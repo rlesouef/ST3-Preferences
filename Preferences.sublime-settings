@@ -1,7 +1,7 @@
 {
 
 	// Police & Text
-	//"font_face": "Inconsolata",
+	"font_face": "Inconsolata",
 	"font_size": 13,
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,

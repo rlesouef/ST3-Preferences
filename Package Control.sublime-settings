@@ -7,5 +7,8 @@
 		"SCSS",
 		"SFTP",
 		"Theme - Flatland"
-	]
+	],
+    "repositories": [
+        "https://github.com/Grafikart/ST3-LiveReload"
+    ]
 }
