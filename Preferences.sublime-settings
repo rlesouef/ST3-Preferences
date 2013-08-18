@@ -1,27 +1,6 @@
 {
-
-	// Police & Text
-	"font_face": "Inconsolata",
-	"font_size": 13,
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
-	"word_wrap": true,
-
-	// Theme
-	"theme": "Flatland Dark.sublime-theme",
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/Color/Peacock.tmTheme",
-
-	// On code avec des espaces
-	"translate_tabs_to_spaces": true,
-	"tab_size": 4,
-	"use_tab_stops": true,
-	"trim_trailing_white_space_on_save": true,
-
-	// Mac, toujours là pour faire chier
-	"open_files_in_new_window": false,
-
-	// Dossier à ignorer
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -32,10 +11,19 @@
 		"tmp",
 		"OLD"
 	],
-
-	// Brrr vim
+	"font_face": "Inconsolata",
+	"font_size": 13,
 	"ignored_packages":
 	[
 		"Vintage"
-	]
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"open_files_in_new_window": false,
+	"tab_size": 4,
+	"theme": "Flatland Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true,
+	"word_wrap": true
 }

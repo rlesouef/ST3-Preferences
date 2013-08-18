@@ -4,11 +4,13 @@
 		"AdvancedNewFile",
 		"Alignment",
 		"Emmet",
+		"LiveReload",
 		"SCSS",
 		"SFTP",
 		"Theme - Flatland"
 	],
-    "repositories": [
-        "https://github.com/Grafikart/ST3-LiveReload"
-    ]
+	"repositories":
+	[
+		"https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json"
+	]
 }
