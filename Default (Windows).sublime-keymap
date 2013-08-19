@@ -6,7 +6,7 @@
     { "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
 
 	{ "keys": ["ctrl+t"], "command": "auto_complete" },
-	{ "keys": ["ctrl+shift+t"], "command": "console_start" },
+	{ "keys": ["ctrl+shift+t"], "command": "open_terminal_project_folder" },
 	{ "keys": ["ctrl+shift+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
 	{ "keys": ["ctrl+shift+d"], "command": "find_all_under" },
 	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment" },
