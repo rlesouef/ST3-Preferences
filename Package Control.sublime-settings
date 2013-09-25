@@ -7,11 +7,12 @@
 		"LiveReload",
 		"SCSS",
 		"SFTP",
+		"SideBarGit",
 		"Terminal",
 		"Theme - Flatland"
 	],
 	"repositories":
 	[
-		"https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json"
+		"https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json",
 	]
 }

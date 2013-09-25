@@ -9,7 +9,8 @@
 		"CVS",
 		".sass-cache",
 		"tmp",
-		"OLD"
+		"OLD",
+		"Vendor"
 	],
 	"font_face": "Inconsolata",
 	"font_size": 13,
