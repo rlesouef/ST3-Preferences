@@ -5,6 +5,7 @@
 		"Alignment",
 		"Emmet",
 		"LiveReload",
+		"Nettuts+ Fetch",
 		"SCSS",
 		"SFTP",
 		"SideBarGit",
@@ -13,6 +14,6 @@
 	],
 	"repositories":
 	[
-		"https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json",
+		"https://raw.github.com/Grafikart/ST3-LiveReload/master/package.json"
 	]
 }

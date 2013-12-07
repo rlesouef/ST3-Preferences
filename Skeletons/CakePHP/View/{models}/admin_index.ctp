@@ -1,19 +1,12 @@
 <?php $this->set('title_for_layout', "{models}"); ?>
 
-<div class="block span12">
+<section class="panel span12">
 
-    <p class="block-heading">
+    <header class="panel-heading">
         {models}
-        <span class="block-icon pull-right">
-            <a href="<?= $this->Html->url(array('action' => 'edit')); ?>" rel="tooltip" title="Ajouter">
-                <i class="icon-plus"></i>
-            </a>
-        </span>
-    </p>
+    </header>
 
-    <p class="block-body"> &nbsp; </p>
-
-    <table class="responsive table">
+    <table class="table table-striped m-b-none text-sm">
         <thead>
             <tr>
                 <th>ID</th>
@@ -27,13 +20,11 @@
                     <td><?= ${model|l}['{model}']['id']; ?></td>
                     <td><?= ${model|l}['{model}']['name']; ?></td>
                     <td>
-                        <a href="<?= $this->Html->url(array('action' => 'edit', ${model|l}['{model}']['id'])); ?>" class="btn btn-primary">
+                        <a href="<?= $this->Html->url(array('action' => 'edit', ${model|l}['{model}']['id'])); ?>" class="btn btn-default">
                             <i class="icon-edit"></i>
-                            Editer
                         </a>
-                        <a href="<?= $this->Html->url(array('action' => 'delete', ${model|l}['{model}']['id'])); ?>" class="btn btn-primary" onclick="return confirm('Etes vous sûr de vouloir supprimer ?')">
-                            <i class="icon-delete"></i>
-                            Supprimer
+                        <a href="<?= $this->Html->url(array('action' => 'delete', ${model|l}['{model}']['id'])); ?>" class="btn btn-danger" onclick="return confirm('Etes vous sûr de vouloir supprimer ?')">
+                            <i class="icon-trash"></i>
                         </a>
                     </td>
                 </tr>
@@ -41,4 +32,22 @@
         </tbody>
     </table>
 
-</div>
+    <footer class="panel-footer">
+        <div class="row">
+            <div class="col-sm-4 hidden-xs">&nbsp;</div>
+            <div class="col-sm-4 text-center">
+                <?= $this->Paginator->counter('{models|l} {:start} à {:end} sur {:count}'); ?>
+            </div>
+            <div class="col-sm-4 text-right">
+                <ul class="pagination pagination-sm m-t-none m-b-none">
+                <?php
+                    echo $this->Paginator->prev(__('Précédent'), array('tag' => 'li'), null, array('tag' => 'li','class' => 'disabled','disabledTag' => 'a'));
+                    echo $this->Paginator->numbers(array('separator' => '','currentTag' => 'a', 'currentClass' => 'active','tag' => 'li','first' => 1));
+                    echo $this->Paginator->next(__('Suivant'), array('tag' => 'li','currentClass' => 'disabled'), null, array('tag' => 'li','class' => 'disabled','disabledTag' => 'a'));
+                ?>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</section>

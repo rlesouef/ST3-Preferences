@@ -6,7 +6,7 @@
     { "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
 
     { "keys": ["super+t"], "command": "auto_complete" },
-    { "keys": ["super+shift+t"], "command": "console_start" },
+    { "keys": ["super+shift+t"], "command": "open_terminal_project_folder" },
     { "keys": ["super+shift+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
     { "keys": ["super+shift+d"], "command": "find_all_under" },
     { "keys": ["super+shift+c"], "command": "toggle_comment" },
@@ -22,11 +22,6 @@
           "key": "selector"
         },{
           "operand": "source.php",
-          "operator": "not_equal",
-          "match_all": true,
-          "key": "selector"
-        },{
-          "operand": "text.php",
           "operator": "not_equal",
           "match_all": true,
           "key": "selector"
@@ -55,20 +50,6 @@
                 "key": "emmet_action_enabled.wrap_as_you_type"
             },
             { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
-        ]
-    },
-    {
-        "keys": [
-            "super+e"
-        ],
-        "args": {
-            "action": "expand_abbreviation"
-        },
-        "command": "run_emmet_action",
-        "context": [
-            {
-                "key": "emmet_action_enabled.expand_abbreviation"
-            }
         ]
     },
 
