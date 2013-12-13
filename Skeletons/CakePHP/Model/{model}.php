@@ -5,7 +5,7 @@ class {model} extends AppModel{
         return $results;
     }
 
-    public function afterSave($created, $options = array){
+    public function afterSave($created, $options = array()){
 
     }
 

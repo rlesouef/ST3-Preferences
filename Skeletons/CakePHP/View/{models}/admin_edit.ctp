@@ -1,14 +1,15 @@
 <?php $this->set('title_for_layout', "Editer {genre|l} {name}"); ?>
+<?php $this->set('add', array('action' => 'edit')); ?>
 
-<div class="block span12">
+<section class="panel span12">
 
-    <p class="block-heading">
+    <header class="panel-heading">
         Editer
-    </p>
-    <div class="block-body">
+    </header>
+    <div class="panel-body">
         <?= $this->Form->create('{model}', array('type' => 'file')); ?>
             <?= $this->Form->input('id'); ?>
             <?= $this->Form->input('name', array('label' => "Titre")); ?>
         <?= $this->Form->end('Sauvegarder'); ?>
     </div>
-</div>
+</section>
