@@ -3,6 +3,7 @@
 	[
 		"AdvancedNewFile",
 		"Alignment",
+		"BracketHighlighter",
 		"ColorPicker",
 		"Emmet",
 		"LiveReload",

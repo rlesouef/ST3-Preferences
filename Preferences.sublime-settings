@@ -1,5 +1,6 @@
 {
 	"bold_folder_labels": true,
+	"enable_tab_scrolling": false,
 	"color_scheme": "Packages/User/Color/Peacock.tmTheme",
 	"folder_exclude_patterns":
 	[
@@ -15,7 +16,8 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"AdvancedNewFile"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
