@@ -3,6 +3,7 @@
 	[
 		"AdvancedNewFile",
 		"Alignment",
+		"BracketHighlighter",
 		"ColorPicker",
 		"Emmet",
 		"Grunt",
@@ -12,7 +13,8 @@
 		"SFTP",
 		"SideBarGit",
 		"Terminal",
-		"Theme - Flatland"
+		"Theme - Flatland",
+		"Theme - Spacegray"
 	],
 	"repositories":
 	[

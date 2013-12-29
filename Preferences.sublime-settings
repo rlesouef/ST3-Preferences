@@ -1,6 +1,20 @@
 {
+	/*
+		THEME
+	*/
+	"font_size": 14,
+	"font_face": "Source Code Pro",
+	//"font_face": "Inconsolata",
+	//"theme": "Flatland Dark.sublime-theme",
+	"color_scheme": "Packages/User/Color/Custom.tmTheme",
+	"theme": "Spacegray.sublime-theme",
+	//"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	//"line_padding_bottom": 1,
+	//"line_padding_top": 1,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/Color/Peacock.tmTheme",
+	"enable_tab_scrolling": false,
+
+
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -12,18 +26,11 @@
 		"OLD",
 		"Vendor"
 	],
-	"font_size": 13,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
-	"open_files_in_new_window": false,
+	"ignored_packages": ["Vintage"],
+	"open_files_in_new_window": false,  // MacOS Behavior
 	"tab_size": 4,
-	"theme": "Flatland Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
-	"word_wrap": true
+	"word_wrap": false,
 }

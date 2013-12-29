@@ -21,7 +21,7 @@
         "key": "selector"
     }]},
     { "keys": ["super+shift+down"], "command": "duplicate_line" },
-    { "keys": ["super+k"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "keys": ["super+k", "super+k"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
     // super + e => <?= ?>
     { "keys": ["super+e"], "command": "insert_snippet", "args": {"contents": "<?= ${1}; ?>${2}"},
@@ -130,9 +130,17 @@
     /**
     * Code folding
     */
-    { "keys": ["super+keypad_minus"], "command": "fold_by_level", "args": {"level": 2} },
-    { "keys": ["super+shift+keypad_minus"], "command": "fold_by_level", "args": {"level": 1} },
-    { "keys": ["super+keypad_plus"], "command": "unfold" },
+    { "keys": ["super+@"], "command": "unfold" },
+    { "keys": ["super+&"], "command": "fold_by_level", "args": {"level": 1} },
+    { "keys": ["super+é"], "command": "fold_by_level", "args": {"level": 2} },
+    { "keys": ["super+\""], "command": "fold_by_level", "args": {"level": 3} },
+    { "keys": ["super+'"], "command": "fold_by_level", "args": {"level": 4} },
+    { "keys": ["super+("], "command": "fold_by_level", "args": {"level": 5} },
+    { "keys": ["super+§"], "command": "fold_by_level", "args": {"level": 6} },
+    { "keys": ["super+è"], "command": "fold_by_level", "args": {"level": 7} },
+    { "keys": ["super+!"], "command": "fold_by_level", "args": {"level": 8} },
+    { "keys": ["super+ç"], "command": "fold_by_level", "args": {"level": 9} },
+    { "keys": ["super+à"], "command": "unfold_all" },
 
     /**
     * Macro SFTP
