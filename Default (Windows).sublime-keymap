@@ -13,15 +13,30 @@
     { "keys": ["ctrl+shift+down"], "command": "duplicate_line" },
     { "keys": ["ctrl+k"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
-	// Ctrl + e => <?= ?>
-	{ "keys": ["ctrl+e"], "command": "insert_snippet", "args": {"contents": "<?= ${1}; ?>${2}"},
-		"context": [{
+    // Ctrl + e => <?= ?>
+    { "keys": ["ctrl+e"], "command": "insert_snippet", "args": {"contents": "<?= ${1}; ?>${2}"},
+        "context": [{
           "operand": "text.html",
           "operator": "equal",
           "match_all": true,
           "key": "selector"
         },{
-	      "operand": "source.php",
+          "operand": "source.php",
+          "operator": "not_equal",
+          "match_all": true,
+          "key": "selector"
+        }]
+    },
+
+	// Ctrl + e => <%= %>
+	{ "keys": ["ctrl+e"], "command": "insert_snippet", "args": {"contents": "<%= ${1}; %>${2}"},
+		"context": [{
+          "operand": "text.erb",
+          "operator": "equal",
+          "match_all": true,
+          "key": "selector"
+        },{
+	      "operand": "source.erb",
 	      "operator": "not_equal",
 	      "match_all": true,
 	      "key": "selector"
@@ -54,6 +69,7 @@
     },
 
 	// Alignment
+    { "keys": ["ctrl+i"], "command": "reindent"},
 	{ "keys": ["ctrl+l"], "command": "alignment" ,  "context":
 		[
 			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
@@ -110,7 +126,7 @@
 	/**
 	* Nettuts Fetch
 	**/
-	{    "keys": ["ctrl+shift+e"], "command": "fetch" },
+	{ "keys": ["ctrl+shift+e"], "command": "fetch" },
 
 	/**
 	* Advanced New File
